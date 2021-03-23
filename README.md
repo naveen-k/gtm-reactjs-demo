@@ -1,4 +1,4 @@
-# GTM Demp React App
+# GTM Demo React App
 
 The aim of this project is to demonstrate GTM integration.
 ## Available Scripts
@@ -26,6 +26,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-### GTM Configuration
+## GTM Configuration
 
 GTM ID should be replaced with actual ones in 'app.config.js'.
