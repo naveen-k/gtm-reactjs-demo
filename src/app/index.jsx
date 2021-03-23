@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react';
 import TagManager from 'react-gtm-module'
 import Router from './Router';
+import{GTM_ID} from '../config/app.config';
 
 const tagManagerArgs = {
-	gtmId: 'GTM-TSWC9MX',
+	gtmId: GTM_ID,
 	dataLayerName: 'Home'
 }
 TagManager.initialize(tagManagerArgs)

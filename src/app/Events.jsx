@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import TagManager from 'react-gtm-module'
-
+import{GTM_ID} from '../config/app.config';
 export default class Events extends PureComponent {
   constructor(props, context) {
     super(props, context);
@@ -18,7 +18,7 @@ export default class Events extends PureComponent {
   sendEvent = (event) => {
     event.preventDefault();
 		const tagManagerArgs = {
-			gtmId: 'GTM-TSWC9MX',
+			gtmId: GTM_ID,
 			events: {
 				action: 'action'
 			}
