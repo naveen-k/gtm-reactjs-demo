@@ -1,5 +1,5 @@
  import React, { Component } from 'react';
- import TagManager from 'react-gtm-module'
+ import TagManager from 'react-gtm-module';
 
 
 

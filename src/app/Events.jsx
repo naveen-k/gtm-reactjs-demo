@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import TagManager from 'react-gtm-module'
-import{GTM_ID} from '../config/app.config';
+import TagManager from 'react-gtm-module';
+
 export default class Events extends PureComponent {
   constructor(props, context) {
     super(props, context);
@@ -16,14 +16,17 @@ export default class Events extends PureComponent {
   };
 
   sendEvent = (event) => {
+		const {action } = this.state;
     event.preventDefault();
 		const tagManagerArgs = {
-			gtmId: GTM_ID,
-			events: {
-				action: 'action'
-			}
-	}
-		TagManager.initialize(tagManagerArgs);
+			dataLayer: {
+				userId: '001',
+				userProject: 'test',
+				userData: action,
+			},
+			dataLayerName: 'PageDataLayer'
+		}
+		TagManager.dataLayer(tagManagerArgs)
   };
 
   render() {

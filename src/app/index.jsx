@@ -5,7 +5,7 @@ import{GTM_ID} from '../config/app.config';
 
 const tagManagerArgs = {
 	gtmId: GTM_ID,
-	dataLayerName: 'Home'
+	dataLayerName: 'PageDataLayer'
 }
 TagManager.initialize(tagManagerArgs)
 
